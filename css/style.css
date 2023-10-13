@@ -1,0 +1,79 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Sora', sans-serif;
+ }
+
+ main {
+     width: 30%;
+     height: 100vh;
+     margin: auto;
+     background-image: linear-gradient(to right top, yellow, darkcyan, red);
+ }
+
+ .startbtn {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     padding: 10px 25px;
+     border-radius: 10px;
+     font-size: 20px;
+     border: none;
+     border: 1px solid darkgoldenrod;
+     cursor: pointer;
+     background: rgb(0, 0, 0, 0.5);
+     color: white;
+     /* display: none; */
+ }
+
+ .gussName {
+     width: 100%;
+     height: 100vh;
+     background: black;
+     color: white;
+     padding: 2%;
+     font-size: 20px;
+     display: none;
+ }
+
+ .checkName {
+     width: 100%;
+     height: 100vh;
+     background: black;
+     color: white;
+     display: none;
+     padding: 0px 10px;
+ }
+
+ .resultbtn {
+     position: absolute;
+     width: auto;
+     white-space: nowrap;
+     background: white;
+     color: black;
+     left: 50%;
+     transform: translateX(-50%);
+     bottom: 20%;
+     display: none;
+ }
+
+ .seeName {
+     background: black;
+     color: white;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 50px;
+     display: none;
+ }
+
+
+ @media only screen and (min-width: 200px) and (max-width: 567px) {
+     main {
+         width: 100%;
+     }
+ }
