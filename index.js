@@ -105,16 +105,16 @@ let DisplatData = (index) => {
 
     checkName.innerHTML = '';
     checkName.innerHTML = `
-                <h2 class="text-3xl py-5">
+                <h2 class="text-xl py-5">
                     The name you selected,is the name on this page
                 </h2>
-                <ul>
+                <ul class='grid grid-cols-2 gap-3'>
                     <li class="bg-gray-500 p-2 text-2xl my-2">${AllData[index].a}</li>
                     <li class="bg-gray-500 p-2 text-2xl my-2">${AllData[index].b}</li>
                     <li class="bg-gray-500 p-2 text-2xl my-2">${AllData[index].c}</li>
                     <li class="bg-gray-500 p-2 text-2xl my-2">${AllData[index].d}</li>
                 </ul>
-                <div class="text-center py-9 yesnobtn">
+                <div class="text-center py-9 yesnobtn mt-5">
                     <button class="btn bg-white text-black font-bold p-2 px-5 rounded me-5" onclick="DisplatData(${count});giveindex(${index})">Yes</button>
                     <button class="btn bg-white text-black font-bold p-2 px-5 rounded me-2" onclick="DisplatData(${count})">No</button>
                 </div>
@@ -149,9 +149,15 @@ resultbtn.addEventListener('click', function () {
     intervalcount = 5;
 
     let stopinterval = setInterval(function () {
-        if (intervalcount == 0) {
+        if (intervalcount == 0 && num.length==2) {
             seeName.innerHTML = `<span>
                         It's ${resultName}
+                    </span>`
+            clearInterval(stopinterval);
+        }
+        else if(intervalcount == 0 && num.length<2) {
+            seeName.innerHTML = `<span>
+                        please Select Correct Options
                     </span>`
             clearInterval(stopinterval);
         }
@@ -166,6 +172,5 @@ resultbtn.addEventListener('click', function () {
     resultbtn.style.display = 'none';
     seeName.style.display = 'flex';
     checkName.style.display = 'none';
-
 })
 DisplatData(0);

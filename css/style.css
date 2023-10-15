@@ -9,7 +9,8 @@
      width: 30%;
      height: 100vh;
      margin: auto;
-     background-image: linear-gradient(to right top, yellow, darkcyan, red);
+     background: url(https://media.tenor.com/y5DrU1cjqkYAAAAC/sound-waves.gif);
+     background-size: cover;
  }
 
  .startbtn {
@@ -18,41 +19,58 @@
      left: 50%;
      transform: translate(-50%, -50%);
      padding: 10px 25px;
-     border-radius: 10px;
+     border-radius: 4px;
      font-size: 20px;
      border: none;
-     border: 1px solid darkgoldenrod;
      cursor: pointer;
      background: rgb(0, 0, 0, 0.5);
      color: white;
-     /* display: none; */
+     box-shadow: 0px 0px 10px 5px purple;
  }
 
  .gussName {
      width: 100%;
      height: 100vh;
-     background: black;
+     /* background: url(https://i.gifer.com/HtW2.gif); */
+     
+     background-image: url(https://media.tenor.com/tVJw8HgcIZwAAAAM/design-animation.gif);
+     background-size: cover;
      color: white;
      padding: 2%;
      font-size: 20px;
      display: none;
+     background-position: center top;
  }
 
  .checkName {
      width: 100%;
      height: 100vh;
-     background: black;
      color: white;
      display: none;
      padding: 0px 10px;
+     background: url(https://media.tenor.com/pb2HrG36eA4AAAAC/flower.gif);
+     background-size: cover;
+ }
+ .checkName li {
+    background: rgba(0, 0, 0,0.7);
+    font-size: 16px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-weight: bold;
+ }
+ .checkName button {
+    background: linear-gradient(to right top,#1200ff,purple);
+    color: white;
  }
 
  .resultbtn {
      position: absolute;
      width: auto;
      white-space: nowrap;
-     background: white;
-     color: black;
+     background: rgba(0, 0, 0,0.7);
+     color: white;
+     border: 1px solid white;
      left: 50%;
      transform: translateX(-50%);
      bottom: 20%;
@@ -60,7 +78,8 @@
  }
 
  .seeName {
-     background: black;
+     background: url(https://i.pinimg.com/originals/da/a7/e4/daa7e47e58fe91f3588e7f92cc5c8dce.gif);
+     background-size: cover;
      color: white;
      width: 100%;
      height: 100vh;
@@ -70,7 +89,23 @@
      font-size: 50px;
      display: none;
  }
+ .seeName span {
+    background: rgba(0, 0, 0,0.7);
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 18px;
+    box-shadow: 0px 0px 10px 2px purple;
+ }
 
+ .gussName ul li {
+    padding: 15px !important;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-weight: bold;
+    background: rgba(0, 0, 0,0.7);
+ }
+ 
 
  @media only screen and (min-width: 200px) and (max-width: 567px) {
      main {
